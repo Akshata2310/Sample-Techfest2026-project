@@ -1,0 +1,236 @@
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --primary: #c1121f;
+  --primary-dark: #8b0000;
+  --primary-light: #fecaca;
+  --secondary: #2563eb;
+  --accent: #8b5cf6;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --radius: 18px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: linear-gradient(135deg, #fff5f5, #f8fafc, #eef4ff);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.page-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px 48px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.page-header {
+  margin: 25px 0;
+  padding: 80px 30px;
+  text-align: center;
+  color: white;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #c1121f, #ef4444, #8b5cf6);
+  box-shadow: 0 20px 40px rgba(193, 18, 31, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  letter-spacing: -1px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(193, 18, 31, 0.12);
+}
+
+.card--intro {
+  border-left: 6px solid var(--primary);
+  width: 100%;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+#navigation {
+  background: rgba(255, 255, 255, .92);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+  margin: 25px 0;
+  border-top: none;
+}
+
+#navigation:hover {
+  transform: none;
+}
+
+#navigation h2,
+#navigation h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+#navigation h3 {
+  margin-top: 24px;
+}
+
+#navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#navigation li {
+  display: flex;
+  flex: 1;
+  min-width: 140px;
+}
+
+#navigation li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #c1121f, #ef4444);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s ease;
+  border: none;
+}
+
+#navigation li a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(193, 18, 31, .25);
+  color: white;
+  background: linear-gradient(135deg, #c1121f, #ef4444);
+}
+
+.intro h2,
+.featured-events h2,
+#prize-pool h2 {
+  margin-top: 0;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  color: var(--text);
+  border-bottom: 2px solid var(--primary-light);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 0;
+  list-style: none;
+}
+
+.card--event {
+  height: 100%;
+  border-top: 6px solid var(--accent);
+}
+
+.card--event img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+#prize-pool table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+#prize-pool th {
+  background: var(--primary);
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+#prize-pool td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border);
+}
+
+#prize-pool tr:hover {
+  background: #fff5f5;
+}
+
+@media (max-width: 768px) {
+  .event-list {
+    grid-template-columns: 1fr;
+  }
+  
+  #navigation ul {
+    flex-direction: column;
+  }
+  
+  #navigation li {
+    width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #f1f5f9;
+  border-radius: 24px 24px 0 0;
+  margin-top: 40px;
+}
+
+footer img {
+  border-radius: 6px;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+
+footer img:hover {
+  transform: scale(1.2);
+}

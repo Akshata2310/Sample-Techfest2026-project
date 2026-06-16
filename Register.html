@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akshata">
+    <meta name="description" content="College Event Registration Portal">
+    <title>TechFest 2026 - Registration</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <h1>TechFest 2026</h1>
+        <p>Experience the future of technology at TechFest 2026!</p>
+    </header>
+
+    <main>
+        <nav id="navigation">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="schedule.html">Event schedule</a></li>
+                <li><a href="register.html">Registration</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <section id="registration">
+            <h2>Registration</h2>
+            <p>Register now to secure your spot at TechFest 2026! Fill out the form below to join us for an unforgettable experience.</p>
+            <form action="submit_registration.php" method="post">
+                <label for="name">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender" value="female"> Female</label><br>
+                    <label><input type="radio" name="gender" value="male"> Male</label><br>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset><br>
+
+                <label for="institution">Institution/Organization:</label><br>
+                <input type="text" id="institution" name="institution"><br><br>
+
+                <label for="department">Department:</label><br>
+                <select id="department" name="department">
+                    <option value="computer-science">Computer Science</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                    <option value="MECH">MECH</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <fieldset>
+                    <legend>Year of Study</legend>
+                    <label><input type="radio" name="year" value="first-year" checked> First Year</label><br>
+                    <label><input type="radio" name="year" value="second-year"> Second Year</label><br>
+                    <label><input type="radio" name="year" value="third-year"> Third Year</label><br>
+                    <label><input type="radio" name="year" value="fourth-year"> Fourth Year</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Choose events</legend>
+                    <label><input type="checkbox" name="events" value="coding-challenge"> Coding Challenge</label><br>
+                    <label><input type="checkbox" name="events" value="robotics"> Robotics</label><br>
+                    <label><input type="checkbox" name="events" value="workshop"> Workshop</label><br>
+                    <label><input type="checkbox" name="events" value="ai-quiz"> AI Quiz</label><br>
+                    <label><input type="checkbox" name="events" value="hackathon"> Hackathon</label><br>
+                    <label><input type="checkbox" name="events" value="cognitive-computing"> Cognitive Computing Challenge</label><br>
+                    <label><input type="checkbox" name="events" value="cybersecurity"> Cybersecurity Challenge</label><br>
+                    <label><input type="checkbox" name="events" value="data-science"> Data Science Competition</label><br>
+                    <label><input type="checkbox" name="events" value="bug-hunt"> Bug Hunt</label><br>
+
+                </fieldset><br>
+
+                <label for="address">Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+
+                <label for="resume">Upload Resume:</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+                <input type="submit" value="Register">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+        <br>
+    </main>
+
+    <hr>
+
+    <footer>
+        <a href="#">Back to top</a>
+        <p>You can visit us through <a href="https://www.youtube.com/TechFest2026" target="_blank"><img src="img/youtube.jpg" alt="YouTube" width="30"></a> 
+            <a href="https://www.instagram.com/TechFest2026" target="_blank"><img src="img/instagram1.png" alt="Instagram" width="30"></a>
+            <a href="https://www.linkedin.com/company/TechFest2026" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a></p>
+        <p>Contact us at <a href="mailto:abc@techfest2026.edu">abc@techfest2026.edu</a> for registration support.</p>
+    </footer>
+</body>
+</html>

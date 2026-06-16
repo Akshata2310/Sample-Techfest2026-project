@@ -1,0 +1,248 @@
+:root{
+  --bg:#f8fafc;
+  --surface:#ffffff;
+
+  --primary:#c1121f;
+  --primary-dark:#8b0000;
+  --primary-light:#fecaca;
+
+  --secondary:#2563eb;
+  --accent:#8b5cf6;
+  --cyan:#06b6d4;
+
+  --success:#10b981;
+  --warning:#f59e0b;
+
+  --text:#0f172a;
+  --muted:#64748b;
+  --border:#e2e8f0;
+
+  --radius:18px;
+  --max-width:1200px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #c10a0a;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #7a0000;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
+body > header,
+body > main,
+body > footer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+body > header{
+  max-width:var(--max-width);
+  margin:25px auto;
+  padding:90px 30px;
+
+  text-align:center;
+  color:white;
+
+  border-radius:28px;
+
+  background:
+  linear-gradient(
+    135deg,
+    #c1121f,
+    #ef4444,
+    #8b5cf6
+  );
+
+  box-shadow:
+  0 25px 50px rgba(193,18,31,.25);
+
+  overflow:hidden;
+  position:relative;
+}
+
+body > header::before{
+  content:"";
+  position:absolute;
+  width:350px;
+  height:350px;
+  border-radius:50%;
+  background:rgba(255,255,255,.08);
+  top:-120px;
+  right:-100px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+main section {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+section h2, section h3 {
+    border-bottom: 2px solid #c10a0a;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#navigation li a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+#navigation li a:hover {
+    background-color: #c10a0a;
+    color: #fff;
+    border-color: #7a0000;
+}
+
+#schedule-table {
+    overflow-x: auto;
+}
+
+#schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+table caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #c10a0a;
+}
+
+#schedule-table table, 
+#schedule-table th, 
+#schedule-table td {
+    border: 1px solid #ddd;
+}
+
+#schedule-table th, 
+#schedule-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+#schedule-table thead tr:first-child th {
+    background-color: #c10a0a;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#schedule-table thead tr:nth-child(2) th {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#schedule-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+#schedule-table tbody tr:hover {
+    background-color: #fff3f3;
+}
+
+#schedule-table tbody td[colspan="3"] {
+    background-color: #fff3f3;
+    color: #c10a0a;
+}
+
+#schedule-table tfoot td {
+    font-style: italic;
+    color: #666;
+    background-color: #f9f9f9;
+}
+
+body > footer {
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+    padding: 30px 20px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a[href="#"] {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer img {
+    vertical-align: middle;
+    margin: 0 5px;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    #navigation ul {
+        justify-content: center;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+}
