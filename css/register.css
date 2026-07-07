@@ -348,3 +348,76 @@ footer:nth-child(2){
     margin-bottom: 10px;
   }
 }
+
+.progress-container {
+  height: 14px;
+  background: #eee;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+#progressBar{
+  height:100%;
+  width:0%;
+  background:linear-gradient(90deg,#c1121f,#ef4444);
+  transition:.4s;
+}
+
+.summary-box{
+  margin-top:30px;
+  padding:20px;
+  border-radius:12px;
+  background:#fafafa;
+  border:1px solid #ddd;
+}
+
+.summary-box p{
+  font-weight:600;
+}
+
+#resumeName{
+  margin-top:10px;
+  color:#64748b;
+}
+
+#toast{
+  position:fixed;
+  right:30px;
+  bottom:30px;
+  background:#111827;
+  color:white;
+  padding:14px 22px;
+  border-radius:10px;
+  opacity:0;
+  pointer-events:none;
+  transition:.4s;
+  z-index:1000;
+}
+
+#toast.show{
+  opacity:1;
+}
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.5);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+}
+
+.modal-content{
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+  width:400px;
+  max-width:90%;
+}
+
+.modal.show{
+  display:flex;
+}
