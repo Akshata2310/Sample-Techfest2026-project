@@ -2,118 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akshata">
-    <meta name="description" content="College Event Registration Portal">
+    <meta name="description" content="TechFest 2026 is a polished, portfolio-ready college festival website with event highlights, registration, and schedule details.">
     <title>TechFest 2026</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main1.css">
 </head>
 <body>
-    <header>
-        <h1>TechFest 2026</h1>
-        <p>Experience the future of technology at TechFest 2026!</p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Innovation • Learning • Community</p>
+            <h1>TechFest 2026</h1>
+            <p>A three-day celebration of innovation where students, creators, and tech leaders come together for workshops, competitions, and networking.</p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="register.html">Register Now</a>
+                <a class="btn btn-secondary" href="events.html">Explore Events</a>
+            </div>
+            <div class="hero-badges">
+                <span>9 flagship events</span>
+                <span>30+ colleges</span>
+                <span>2 hands-on workshops</span>
+                <span>1000+ attendees</span>
+            </div>
+            <div class="hero-meta">
+                <div class="meta-card">
+                    <strong id="countdownText">Loading countdown...</strong>
+                    <span>Festival countdown</span>
+                </div>
+                <div class="meta-card">
+                    <strong>₹107,000</strong>
+                    <span>Prize pool</span>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section id="purpose" class="card card--intro">
-            <h2>Purpose</h2>
-            <p>TechFest 2026 is a premier technology festival that brings together innovators, entrepreneurs, and tech enthusiasts from around the world. Our mission is to foster creativity, collaboration, and learning in the field of technology. Join us for an unforgettable experience filled with inspiring talks, hands-on workshops, and exciting competitions.</p>
+    <main id="main-content">
+        <section id="purpose" class="card card--intro reveal">
+            <div class="section-heading">
+                <p class="section-kicker">About the festival</p>
+                <h2>Where ideas become real experiences.</h2>
+            </div>
+            <p>TechFest 2026 is a premier campus innovation festival designed to inspire students through hands-on challenges, guest talks, and collaborative problem-solving. The experience is built to feel polished, professional, and inspiring from the very first interaction.</p>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Hands-on learning</h3>
+                    <p>Practical sessions, live demos, and expert-led workshops give students a strong edge.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Career-ready exposure</h3>
+                    <p>Participants connect with mentors, recruiters, and peers who shape future-ready talent.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Creative competition</h3>
+                    <p>From coding to robotics, the festival rewards curiosity, speed, and ingenuity.</p>
+                </article>
+            </div>
         </section>
 
-        <nav id="navigation">
-            <h2>Navigation</h2>
-            <ul>
-                <li><a href="index.html" class="btn">Home</a></li>
-                <li><a href="events.html" class="btn">Events</a></li>
-                <li><a href="schedule.html" class="btn">Event schedule</a></li>
-                <li><a href="register.html" class="btn">Registration</a></li>
-                <li><a href="contact.html" class="btn">Contact Us</a></li>
-            </ul>
+        <nav id="navigation" class="card card--navigation reveal">
+            <div class="nav-top">
+                <h2>Quick access</h2>
+                <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+            <div id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="events.html" class="btn">Events</a></li>
+                    <li><a href="schedule.html" class="btn">Schedule</a></li>
+                    <li><a href="register.html" class="btn">Register</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </div>
             <figure>
                 <img src="img/mlogo.jpeg" alt="TechFest 2026 logo" width="300" title="TechFest 2026 Logo">
                 <figcaption>Join us for the biggest tech celebration of the year.</figcaption>
             </figure>
         </nav>
 
-        <section id="details" class="card card--features">
-            <h2>Event Details</h2>
-            <ul>
-                <li>Workshops, exhibitions, and competitions</li>
-                <li>Industry speakers and networking opportunities</li>
-                <li>Free entry for students and staff</li>
-            </ul>
+        <section id="event-statistics" class="card card--stats reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Festival snapshot</p>
+                <h2>Built for impact.</h2>
+            </div>
+            <div class="stats-grid">
+                <div class="metric-card">
+                    <strong class="stat-value" data-target="1000" data-suffix="+">0</strong>
+                    <span>Participants</span>
+                </div>
+                <div class="metric-card">
+                    <strong class="stat-value" data-target="9">0</strong>
+                    <span>Events</span>
+                </div>
+                <div class="metric-card">
+                    <strong class="stat-value" data-target="30" data-suffix="+">0</strong>
+                    <span>Colleges</span>
+                </div>
+                <div class="metric-card">
+                    <strong class="stat-value" data-target="2">0</strong>
+                    <span>Workshops</span>
+                </div>
+            </div>
         </section>
 
-        <section id="event-statistics" class="card card--stats">
-            <h2>Event Statistics</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Details</th>
-                        <th>Count</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Participants</td>
-                        <td>1000+</td>
-                    </tr>
-                    <tr>
-                        <td>Events</td>
-                        <td>9</td>
-                    </tr>
-                    <tr>
-                        <td>Colleges</td>
-                        <td>30</td>
-                    </tr>
-                    <tr>
-                        <td>Workshops</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
+        <section id="why-participate" class="card card--benefits reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Why join</p>
+                <h2>Everything a student needs to grow.</h2>
+            </div>
+            <div class="card-grid">
+                <article class="info-card">🏆 Win exciting prizes and recognition</article>
+                <article class="info-card">💡 Learn new technologies from industry experts</article>
+                <article class="info-card">🤝 Network with students, mentors, and sponsors</article>
+                <article class="info-card">📜 Earn certificates and showcase your work</article>
+            </div>
         </section>
 
-        <section id="why-participate" class="card card--benefits">
-            <h2>Why Participate? 🌟</h2>
-            <ul class="benefit-list">
-                <li class="benefit-item">🏆 Win prizes</li>
-                <li class="benefit-item">💡 Learn new technologies</li>
-                <li class="benefit-item">🤝 Network with students</li>
-                <li class="benefit-item">📜 Earn certificates</li>
-                <li class="benefit-item">👩‍💼 Meet industry experts</li>
-            </ul>
+        <section id="guest-speakers" class="card card--speakers reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Guest speakers</p>
+                <h2>Voices that inspire.</h2>
+            </div>
+            <div class="speaker-grid">
+                <article class="speaker-card"><strong>Dr. Priya Rao</strong><span>AI and ethical innovation</span></article>
+                <article class="speaker-card"><strong>Mr. Arjun Mehta</strong><span>Robotics and automation trends</span></article>
+                <article class="speaker-card"><strong>Ms. Neha Sharma</strong><span>Building startup-ready products</span></article>
+                <article class="speaker-card"><strong>Prof. Sandeep Kumar</strong><span>Data science in real-world applications</span></article>
+            </div>
         </section>
 
-        <section id="guest-speakers" class="card card--speakers">
-            <h2>Guest Speakers 🎤</h2>
-            <ul class="speaker-list">
-                <li class="speaker-item"><strong>Dr. Priya Rao</strong> - AI and ethical innovation</li>
-                <li class="speaker-item"><strong>Mr. Arjun Mehta</strong> - Robotics and automation trends</li>
-                <li class="speaker-item"><strong>Ms. Neha Sharma</strong> - Building startup-ready products</li>
-                <li class="speaker-item"><strong>Prof. Sandeep Kumar</strong> - Data science in real-world applications</li>
-            </ul>
+        <section id="promo-video" class="card card--video reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Highlight reel</p>
+                <h2>See the energy from last year.</h2>
+            </div>
+            <iframe src="https://www.youtube.com/embed/DLDD9yPfB0A?si=NoJ0yXSQ0STxWGnj" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
-        <section id="promo-video" class="card card--video">
-            <h2>Promo Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/DLDD9yPfB0A?si=NoJ0yXSQ0STxWGnj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="previous-highlights" class="card card--highlights reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Past success</p>
+                <h2>Proof that the experience matters.</h2>
+            </div>
+            <div class="showcase-grid">
+                <article class="showcase-panel">
+                    <h3>Previous highlights</h3>
+                    <ul>
+                        <li>850+ students participated</li>
+                        <li>45 winners across all events</li>
+                        <li>12 innovative projects showcased</li>
+                    </ul>
+                </article>
+                <article class="showcase-panel">
+                    <h3>Student feedback</h3>
+                    <p>“The hackathon was intense, inspiring, and genuinely career-shaping.”</p>
+                    <p>“Every session felt practical and well curated for real industry exposure.”</p>
+                </article>
+            </div>
         </section>
 
-        <section id="previous-highlights" class="card card--highlights">
-            <h2>Previous Year's Highlights 🌟</h2>
-            <ul>
-                <li><strong>Number of Participants:</strong> 850+ students participated</li>
-                <li><strong>Winners:</strong> 45 winners across all events</li>
-                <li><strong>Winning Projects:</strong> 12 innovative projects showcased</li>
-                <li><strong>Industry Partners:</strong> 20+ companies involved</li>
-                <li><strong>Social Media Reach:</strong> 50K+ impressions</li>
-                <li><strong>Satisfaction Rate:</strong> 95% positive feedback</li>
-            </ul>
-        </section>
-
-        <section id="prize-pool" class="card card--prizes">
-            <h2>Prize Pool Section 🏆</h2>
+        <section id="prize-pool" class="card card--prizes reveal">
+            <div class="section-heading">
+                <p class="section-kicker">Prize pool</p>
+                <h2>Recognition that matches the ambition.</h2>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -122,65 +180,34 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Coding Challenge</td>
-                        <td>₹10,000</td>
-                    </tr>
-                    <tr>
-                        <td>Robotics Competitions</td>
-                        <td>₹15,000</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development Workshop</td>
-                        <td>₹8,000</td>
-                    </tr>
-                    <tr>
-                        <td>AI Quiz</td>
-                        <td>₹5,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hackathon</td>
-                        <td>₹20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Computing Challenge</td>
-                        <td>₹12,000</td>
-                    </tr>
-                    <tr>
-                        <td>Cybersecurity Challenge</td>
-                        <td>₹18,000</td>
-                    </tr>
-                    <tr>
-                        <td>Data Science Competition</td>
-                        <td>₹12,000</td>
-                    </tr>
-                    <tr>
-                        <td>Bug Hunt</td>
-                        <td>₹7,000</td>
-                    </tr>
+                    <tr><td>Coding Challenge</td><td>₹10,000</td></tr>
+                    <tr><td>Robotics Competitions</td><td>₹15,000</td></tr>
+                    <tr><td>Web Development Workshop</td><td>₹8,000</td></tr>
+                    <tr><td>AI Quiz</td><td>₹5,000</td></tr>
+                    <tr><td>Hackathon</td><td>₹20,000</td></tr>
+                    <tr><td>Cognitive Computing Challenge</td><td>₹12,000</td></tr>
+                    <tr><td>Cybersecurity Challenge</td><td>₹18,000</td></tr>
+                    <tr><td>Data Science Competition</td><td>₹12,000</td></tr>
+                    <tr><td>Bug Hunt</td><td>₹7,000</td></tr>
                 </tbody>
                 <tfoot>
-                    <tr>
-                        <td><strong>Total Prize Pool</strong></td>
-                        <td><strong>₹107,000</strong></td>
-                    </tr>
+                    <tr><td><strong>Total Prize Pool</strong></td><td><strong>₹107,000</strong></td></tr>
                 </tfoot>
             </table>
         </section>
-
-        <br>
-
     </main>
-
-    <hr>
 
     <footer>
         <a href="#" class="back-to-top">↑ Back to top</a>
-        <p>You can visit us at &nbsp; <a href="https://www.youtube.com/TechFest2026" target="_blank"><img src="img/youtube.jpg" alt="YouTube" width="30"></a>&nbsp; 
-            <a href="https://www.instagram.com/TechFest2026" target="_blank"><img src="img/instagram1.png" alt="Instagram" width="30"></a>&nbsp;
-            <a href="https://www.linkedin.com/company/TechFest2026" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a></p>
+        <p>
+            <a href="https://www.youtube.com/TechFest2026" target="_blank" rel="noreferrer"><img src="img/youtube.jpg" alt="YouTube" width="30"></a>
+            <a href="https://www.instagram.com/TechFest2026" target="_blank" rel="noreferrer"><img src="img/instagram1.png" alt="Instagram" width="30"></a>
+            <a href="https://www.linkedin.com/company/TechFest2026" target="_blank" rel="noreferrer"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a>
+        </p>
         <p>Contact us at <a href="mailto:abc@techfest2026.edu">abc@techfest2026.edu</a> for registration support.</p>
+        <p class="footer-note">Crafted as a polished static project for GitHub Pages and portfolio presentation.</p>
     </footer>
+
     <script src="js/index.js"></script>
 </body>
 </html>

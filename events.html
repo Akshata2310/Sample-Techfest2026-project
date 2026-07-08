@@ -4,36 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Akshata">
-    <meta name="description" content="College Events at TechFest 2026">
+    <meta name="description" content="Explore the event lineup, competition formats, and prize structure for TechFest 2026.">
     <title>TechFest 2026 - Events</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/events.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="progress-bar" aria-hidden="true"></div>
+
     <div class="page-container">
         <header class="page-header">
             <div class="brand">
                 <h1>TechFest 2026</h1>
             </div>
-            <p class="hero-subtitle">Experience the future of technology at TechFest 2026!</p>
+            <p class="hero-subtitle">A curated showcase of innovation, creativity, and competition.</p>
         </header>
 
-        <main class="main-grid">
-            <section id="events" class="card card--intro">
-                <h2>Welcome to the Event Showcase</h2>
-                <p>Join us for an exciting lineup of events designed to inspire and educate. From keynote speeches to hands-on workshops, there's something for everyone at TechFest 2026.</p>
+        <main id="main-content" class="main-grid">
+            <section id="events" class="card card--intro reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Event showcase</p>
+                    <h2>Every track is designed to challenge and inspire.</h2>
+                </div>
+                <p>From coding sprints to robotics battles and expert-led workshops, TechFest offers a complete experience for students who want to build, compete, present, and connect.</p>
             </section>
 
-            <nav id="navigation" class="card card--navigation">
-                <h2>Navigation</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="schedule.html">Event schedule</a></li>
-                    <li><a href="register.html">Registration</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-                <h3>Quick Jump</h3>
+            <nav id="navigation" class="card card--navigation reveal">
+                <div class="nav-top">
+                    <h2>Navigation</h2>
+                    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+                <div id="nav-links" class="nav-links">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <h3>Quick jump</h3>
                 <ul>
                     <li><a href="#coding-challenge">Coding Challenge</a></li>
                     <li><a href="#robotics-competitions">Robotics Competitions</a></li>
@@ -48,234 +61,270 @@
                 </ul>
             </nav>
 
-            <section class="card card--features featured-events">
-                <h2>Featured Events</h2>
+            <section class="card card--features featured-events reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Featured events</p>
+                    <h2>Search, explore, and save your favorites.</h2>
+                </div>
+                <div class="toolbar">
+                    <input id="eventSearch" type="search" placeholder="Search events" aria-label="Search events">
+                    <div class="filter-group">
+                        <button type="button" class="chip is-active" data-filter="all">All</button>
+                        <button type="button" class="chip" data-filter="competition">Competition</button>
+                        <button type="button" class="chip" data-filter="workshop">Workshop</button>
+                        <button type="button" class="chip" data-filter="quiz">Quiz</button>
+                    </div>
+                    <p id="eventCounter" class="counter">Showing 9 events</p>
+                </div>
 
                 <ol class="event-list">
-            <li>
-                <section id="coding-challenge" class="card card--event">
-                    <h3>Coding Challenge</h3>
-                    <p>Test your programming skills in our Coding Challenge. Compete against fellow coders to solve complex problems and win exciting prizes.</p>
-                    <figure>
-                        <img src="img/coding_challenge.jpg" alt="Coding Challenge" width="400" height="300">
-                        <figcaption>Sharpen your coding skills and compete for glory.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Each team can have a maximum of 4 members.</li>
-                        <li>Problems will be released at the start of the challenge.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="robotics-competitions" class="card card--event">
-                    <h3>Robotics Competitions</h3>
-                    <p>Build and program robots to compete in our exciting robotics competitions. Showcase your engineering skills and creativity.</p>
-                    <figure>
-                        <img src="img/robonanza-four-robots-competing-full.jpg" alt="Robotics Competition" width="400" height="300">
-                        <figcaption>Design, build, and compete with your own robot.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 5 members.</li>
-                        <li>Robots must adhere to the specified size and weight limits.</li>
-                        <li>Competitions will be held in various categories based on robot capabilities.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="web-development-workshop" class="card card--event">
-                    <h3>Web Development Workshop</h3>
-                    <p>Learn the latest web development techniques and tools in our hands-on workshop. Gain practical experience from industry experts.</p>
-                    <figure>
-                        <img src="img/Web-Development.jpg" alt="Web Development Workshop" width="400" height="300">
-                        <figcaption>Enhance your web development skills with expert guidance.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Workshop is open to all skill levels, from beginners to advanced developers.</li>
-                        <li>Participants are encouraged to bring their own laptops for hands-on exercises.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="ai-quiz" class="card card--event">
-                    <h3>AI Quiz</h3>
-                    <p>Test your knowledge of artificial intelligence in our interactive quiz. Challenge yourself with questions on machine learning, neural networks, and more.</p>
-                    <figure>
-                        <img src="img/quiz.jpg" alt="AI Quiz" width="400" height="300">
-                        <figcaption>Put your AI knowledge to the test in our exciting quiz.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Quiz will consist of multiple-choice questions covering various AI topics.</li>
-                        <li>Top scorers will receive exciting prizes.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="hackathon" class="card card--event">
-                    <h3>Hackathon</h3>
-                    <p>Collaborate with fellow tech enthusiasts in our 24-hour hackathon. Create innovative solutions to real-world problems and present your ideas to a panel of judges.</p>
-                    <figure>
-                        <img src="img/hackathon.jpg" alt="Hackathon" width="400" height="300">
-                        <figcaption>Innovate and create in our intense hackathon event.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 5 members.</li>
-                        <li>Projects must be developed during the hackathon period.</li>
-                        <li>Final presentations will be judged based on creativity, functionality, and impact.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="cognitive-computing-challenge" class="card card--event">
-                    <h3>Cognitive Computing Challenge</h3>
-                    <p>Explore the world of cognitive computing in this unique challenge. Develop applications that mimic human thought processes and compete for recognition.</p>
-                    <figure>
-                        <img src="img/Cognitive-computing.jpg" alt="Cognitive Computing Challenge" width="400" height="300">
-                        <figcaption>Push the boundaries of technology with our cognitive computing challenge.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 4 members.</li>
-                        <li>Applications must utilize cognitive computing techniques to solve a specified problem.</li>
-                        <li>Submissions will be evaluated based on innovation, functionality, and user experience.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="cybersecurity-challenge" class="card card--event">
-                    <h3>Cybersecurity Challenge</h3>
-                    <p>Test your cybersecurity skills in this thrilling challenge. Identify vulnerabilities, defend against attacks, and secure systems to win exciting prizes.</p>
-                    <figure>
-                        <img src="img/cybersecurity.jpeg" alt="Cybersecurity Challenge" width="400" height="300">
-                        <figcaption>Defend against cyber threats in our intense cybersecurity challenge.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 4 members.</li>
-                        <li>Challenges will include tasks such as penetration testing, vulnerability assessment, and incident response.</li>
-                        <li>Top performers will receive recognition and prizes.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="data-science-competition" class="card card--event">
-                    <h3>Data Science Competition</h3>
-                    <p>Showcase your data science skills in this competitive event. Analyze complex datasets, derive insights, and present your findings to a panel of judges.</p>
-                    <figure>
-                        <img src="img/data_science.jpg" alt="Data Science Competition" width="400" height="300">
-                        <figcaption>Uncover insights and compete in our data science competition.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 4 members.</li>
-                        <li>Datasets will be provided at the start of the competition, and participants will have a set time to analyze and present their findings.</li>
-                        <li>Submissions will be evaluated based on the quality of insights, methodology, and presentation.</li>
-                    </ol>
-                </section>
-            </li>
-            <li>
-                <section id="Bug-Hunt" class="card card--event">
-                    <h3>Bug Hunt</h3>
-                    <p>Put your debugging skills to the test in our Bug Hunt challenge. Identify and fix bugs in a simulated software environment to win exciting prizes.</p>
-                    <figure>
-                        <img src="img/bug_hunt.png" alt="Bug Hunt" width="400" height="300">
-                        <figcaption>Hunt down bugs and showcase your debugging prowess.</figcaption>
-                    </figure>
-                    <h4 class="card__subtitle">Rules</h4>
-                    <ol>
-                        <li>Participants must be registered for TechFest 2026.</li>
-                        <li>Teams can have a maximum of 4 members.</li>
-                        <li>Participants will be given access to a simulated software environment with pre-injected bugs. The goal is to identify and fix as many bugs as possible within the allotted time.</li>
-                        <li>Submissions will be evaluated based on the number of bugs fixed, accuracy, and efficiency.</li>
-                    </ol>
-                </section>
-            </li>
-        </ol>
-
+                    <li>
+                        <section id="coding-challenge" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Coding Challenge</h3>
+                            <p>Test your programming skills in a fast-paced contest built around logic, problem solving, and teamwork.</p>
+                            <figure>
+                                <img src="img/coding_challenge.jpg" alt="Coding Challenge" width="400" height="300">
+                                <figcaption>Sharpen your coding skills and compete for glory.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Each team can have a maximum of 4 members.</li>
+                                <li>Problems will be released at the start of the challenge.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="robotics-competitions" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Robotics Competitions</h3>
+                            <p>Build and program robots to compete in an exciting showcase of engineering and creativity.</p>
+                            <figure>
+                                <img src="img/robonanza-four-robots-competing-full.jpg" alt="Robotics Competition" width="400" height="300">
+                                <figcaption>Design, build, and compete with your own robot.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 5 members.</li>
+                                <li>Robots must adhere to the specified size and weight limits.</li>
+                                <li>Competitions will be held in various categories based on robot capabilities.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="web-development-workshop" class="card card--event" data-category="workshop">
+                            <span class="event-badge">Workshop</span>
+                            <h3>Web Development Workshop</h3>
+                            <p>Learn the latest web development techniques and tools in a hands-on workshop led by industry mentors.</p>
+                            <figure>
+                                <img src="img/Web-Development.jpg" alt="Web Development Workshop" width="400" height="300">
+                                <figcaption>Enhance your web development skills with expert guidance.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Workshop is open to all skill levels, from beginners to advanced developers.</li>
+                                <li>Participants are encouraged to bring their own laptops for hands-on exercises.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="ai-quiz" class="card card--event" data-category="quiz">
+                            <span class="event-badge">Quiz</span>
+                            <h3>AI Quiz</h3>
+                            <p>Challenge your knowledge of machine learning, neural networks, and responsible AI in an interactive quiz.</p>
+                            <figure>
+                                <img src="img/quiz.jpg" alt="AI Quiz" width="400" height="300">
+                                <figcaption>Put your AI knowledge to the test in our exciting quiz.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Quiz will consist of multiple-choice questions covering various AI topics.</li>
+                                <li>Top scorers will receive exciting prizes.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="hackathon" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Hackathon</h3>
+                            <p>Collaborate with fellow tech enthusiasts in a 24-hour challenge to build real solutions to meaningful problems.</p>
+                            <figure>
+                                <img src="img/hackathon.jpg" alt="Hackathon" width="400" height="300">
+                                <figcaption>Innovate and create in our intense hackathon event.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 5 members.</li>
+                                <li>Projects must be developed during the hackathon period.</li>
+                                <li>Final presentations will be judged based on creativity, functionality, and impact.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="cognitive-computing-challenge" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Cognitive Computing Challenge</h3>
+                            <p>Explore the world of cognitive computing by building systems that simulate human-like reasoning and decision-making.</p>
+                            <figure>
+                                <img src="img/Cognitive-computing.jpg" alt="Cognitive Computing Challenge" width="400" height="300">
+                                <figcaption>Push the boundaries of technology with our cognitive computing challenge.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 4 members.</li>
+                                <li>Applications must utilize cognitive computing techniques to solve a specified problem.</li>
+                                <li>Submissions will be evaluated based on innovation, functionality, and user experience.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="cybersecurity-challenge" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Cybersecurity Challenge</h3>
+                            <p>Test your defensive skills by identifying vulnerabilities, protecting systems, and solving attack scenarios in real time.</p>
+                            <figure>
+                                <img src="img/cybersecurity.jpeg" alt="Cybersecurity Challenge" width="400" height="300">
+                                <figcaption>Defend against cyber threats in our intense cybersecurity challenge.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 4 members.</li>
+                                <li>Challenges will include tasks such as penetration testing, vulnerability assessment, and incident response.</li>
+                                <li>Top performers will receive recognition and prizes.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="data-science-competition" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Data Science Competition</h3>
+                            <p>Use data to uncover insights, communicate findings, and solve real-world problems in a judged competition.</p>
+                            <figure>
+                                <img src="img/data_science.jpg" alt="Data Science Competition" width="400" height="300">
+                                <figcaption>Uncover insights and compete in our data science competition.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 4 members.</li>
+                                <li>Datasets will be provided at the start of the competition, and participants will have a set time to analyze and present their findings.</li>
+                                <li>Submissions will be evaluated based on the quality of insights, methodology, and presentation.</li>
+                            </ol>
+                        </section>
+                    </li>
+                    <li>
+                        <section id="Bug-Hunt" class="card card--event" data-category="competition">
+                            <span class="event-badge">Competition</span>
+                            <h3>Bug Hunt</h3>
+                            <p>Put your debugging skills to the test by identifying and resolving software issues under time pressure.</p>
+                            <figure>
+                                <img src="img/bug_hunt.png" alt="Bug Hunt" width="400" height="300">
+                                <figcaption>Hunt down bugs and showcase your debugging prowess.</figcaption>
+                            </figure>
+                            <div class="event-actions">
+                                <a href="Register.html" class="inline-btn">Register</a>
+                                <button type="button" class="inline-btn secondary" data-modal-open>Quick view</button>
+                            </div>
+                            <h4 class="card__subtitle">Rules</h4>
+                            <ol>
+                                <li>Participants must be registered for TechFest 2026.</li>
+                                <li>Teams can have a maximum of 4 members.</li>
+                                <li>Participants will be given access to a simulated software environment with pre-injected bugs. The goal is to identify and fix as many bugs as possible within the allotted time.</li>
+                                <li>Submissions will be evaluated based on the number of bugs fixed, accuracy, and efficiency.</li>
+                            </ol>
+                        </section>
+                    </li>
+                </ol>
             </section>
 
-        <section id="prize-pool" class="card card--features">
-            <h2>Prize Pool Section 🏆</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Event</th>
-                        <th>Prize</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Coding Challenge</td>
-                        <td>₹10,000</td>
-                    </tr>
-                    <tr>
-                        <td>Robotics Competitions</td>
-                        <td>₹15,000</td>
-                    </tr>
-                    <tr>
-                        <td>Web Development Workshop</td>
-                        <td>₹8,000</td>
-                    </tr>
-                    <tr>
-                        <td>AI Quiz</td>
-                        <td>₹5,000</td>
-                    </tr>
-                    <tr>
-                        <td>Hackathon</td>
-                        <td>₹20,000</td>
-                    </tr>
-                    <tr>
-                        <td>Cognitive Computing Challenge</td>
-                        <td>₹12,000</td>
-                    </tr>
-                    <tr>
-                        <td>Cybersecurity Challenge</td>
-                        <td>₹18,000</td>
-                    </tr>
-                    <tr>
-                        <td>Data Science Competition</td>
-                        <td>₹12,000</td>
-                    </tr>
-                    <tr>
-                        <td>Bug Hunt</td>
-                        <td>₹7,000</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td><strong>Total Prize Pool</strong></td>
-                        <td><strong>₹107,000</strong></td>
-                    </tr>
-                </tfoot>
-            </table>
-        </section>
+            <section id="prize-pool" class="card card--features reveal">
+                <div class="section-heading">
+                    <p class="section-kicker">Prize pool</p>
+                    <h2>Rewarding the best ideas and strongest execution.</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Prize</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Coding Challenge</td><td>₹10,000</td></tr>
+                        <tr><td>Robotics Competitions</td><td>₹15,000</td></tr>
+                        <tr><td>Web Development Workshop</td><td>₹8,000</td></tr>
+                        <tr><td>AI Quiz</td><td>₹5,000</td></tr>
+                        <tr><td>Hackathon</td><td>₹20,000</td></tr>
+                        <tr><td>Cognitive Computing Challenge</td><td>₹12,000</td></tr>
+                        <tr><td>Cybersecurity Challenge</td><td>₹18,000</td></tr>
+                        <tr><td>Data Science Competition</td><td>₹12,000</td></tr>
+                        <tr><td>Bug Hunt</td><td>₹7,000</td></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr><td><strong>Total Prize Pool</strong></td><td><strong>₹107,000</strong></td></tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
 
-        <br>
-
-    </main>
-
-    <hr>
-
-    <footer>
-        <a href="#">Back to top</a>
-        <p>You can visit us through <a href="https://www.youtube.com/TechFest2026" target="_blank"><img src="img/youtube.jpg" alt="YouTube" width="30"></a> 
-            <a href="https://www.instagram.com/TechFest2026" target="_blank"><img src="img/instagram1.png" alt="Instagram" width="30"></a>
-            <a href="https://www.linkedin.com/company/TechFest2026" target="_blank"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a></p>
-        <p>Contact us at <a href="mailto:abc@techfest2026.edu">abc@techfest2026.edu</a> for registration support.</p>
-    </footer>
+        <footer>
+            <a href="#" class="back-to-top">Back to top</a>
+            <p>
+                <a href="https://www.youtube.com/TechFest2026" target="_blank" rel="noreferrer"><img src="img/youtube.jpg" alt="YouTube" width="30"></a>
+                <a href="https://www.instagram.com/TechFest2026" target="_blank" rel="noreferrer"><img src="img/instagram1.png" alt="Instagram" width="30"></a>
+                <a href="https://www.linkedin.com/company/TechFest2026" target="_blank" rel="noreferrer"><img src="img/linkedin.png" alt="LinkedIn" width="30"></a>
+            </p>
+            <p>Contact us at <a href="mailto:abc@techfest2026.edu">abc@techfest2026.edu</a> for registration support.</p>
+        </footer>
     </div>
+
+    <div class="event-modal" id="eventModal" aria-hidden="true">
+        <div class="event-modal__content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <h3 id="modalTitle">Event Details</h3>
+            <p id="modalDescription"></p>
+            <button type="button" class="inline-btn" data-close-modal>Close</button>
+        </div>
+    </div>
+
     <script src="js/events.js"></script>
 </body>
 </html>
